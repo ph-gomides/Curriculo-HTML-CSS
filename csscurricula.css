@@ -1,0 +1,98 @@
+ /*primeira coisa que iremos fazer é centralizar os elementos como h1, titulos, text align centraliza linhas, margin auto centra o bloco (quadrado que fica o elemento.vai ter exemplos abaixo*/
+
+ /* vemos que margin vc centraliza o quadrado na tela e o text align centraliza qo que ta escrityo dentro do quadrado como todos os titulos irao ter o mesmo tamanho melhor centralizar tudo no body*/
+
+ body{
+    font-family: 'Times New Roman', Times, serif;
+    width: 80%;
+    margin: auto;
+    color: #444;
+    background-color: #ccc;
+ }
+
+ /*formatação do h1 completa, coloquei a core tamanho da da fonte e centralizei o texto dentro do quadrado*/
+ 
+ h1{
+    
+    background-color: #acafd4;
+    color: #061761;
+    text-align: center;
+    font-size: 46px;
+    margin-bottom: 0;
+    
+ }
+
+ 
+
+ /* o sintaxe border-bottom serve pra colorir o quadrado em qualquer um dos lador, eu coloquei solid que é pra colorir em baixo e coloquei a cor cinza tambem e tambem vou dar um espaçamento entre as letras do quadrado em que ela esta, pq ta mt colado e vou usar o padding, exemplo abaixo*/
+ h2{
+
+   background-color: #b6b6b6;
+   color: #061761;
+   font-size: 36px;
+   border-bottom: 3px solid #444;
+   padding: 12px;
+   margin-top: 48px;
+   margin-bottom: 12px;
+ }
+
+ /* ul nao estava alinhada entao coloquei padding para jogar ela pra esquerda e depoiis coloquei list style position para colocar ela dentro da pagina*/
+
+ ul{
+
+   padding-left: 0%;
+ }
+ li{
+   list-style-position: inside;
+ }
+
+ .center{
+   text-align: center;
+ }
+
+ .sub{
+  margin-top: 0;
+  background-color: #acafd4;
+ }
+
+ /* para tirar o traço em baixo do link e colocar para ele aparecer so quando vc passa o mouse é so usar as tags abaixo*/
+ 
+ a{
+   text-decoration: none;
+ }
+a:hover{
+   
+   text-decoration: underline;
+}
+
+.menu{
+  
+  text-align: right;
+}
+
+/*configurando o menu horizontal, cria uma classe para formatar somente as tag dentros de ul, depois coloque list style none para tirar a ele dos elementos de listagem padroes, coloque tag display inline block para colocar o menu em horizontal, margin para separar um pouco os elementos e o padding da li pode deixar 0, pois querendo o quadrado do menu inteiro seja clicavel*/
+
+.menu li{
+
+  list-style: none;
+  background-color: yellow;
+  display: inline-block;
+  margin: 10px;
+  padding: 0px;
+}
+
+/*depois vamo mexer nos links (a), colocando display inline block para que ele aumente a parte que clicavel (pelo menos foi oq eu entendi), coloque o padding para difenrenciar o quadrado clicavel e escolha a porcenteagem de pixels*/
+
+.menu a{
+  background-color: #b6b6b6 ;
+  display: inline-block;
+  padding: 16px;
+  color: #061761;
+}
+
+.menu a:hover{
+
+  background-color: #444;
+  text-decoration: none;
+  color: azure;
+}
