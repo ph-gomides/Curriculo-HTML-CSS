@@ -1,1 +1,1 @@
-Projeito feito simula um curriculo utilizando html e css
+Projeto feito simula um curriculo utilizando html e css
